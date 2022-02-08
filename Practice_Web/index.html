@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>롯데월드</title>
+    
+    <!-- style -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="wrap">
+        <header id="header" class="clearfix">
+            <h1 class="logo"><a href="#"><img src="images/logo.jpg" alt="롯데월드로고"></a></h1>
+            <nav class="nav">
+                <ul class="clearfix">
+                    <li><a href="#">즐길거리</a>
+                        <ul class="submenu">
+                            <li><a href="#">Submenu_1</a></li>
+                            <li><a href="#">Submenu_2</a></li>
+                            <li><a href="#">Submenu_3</a></li>
+                            <li><a href="#">Submenu_4</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">요금/우대혜택</a>
+                        <ul class="submenu">
+                            <li><a href="#">Submenu_1</a></li>
+                            <li><a href="#">Submenu_2</a></li>
+                            <li><a href="#">Submenu_3</a></li>
+                            <li><a href="#">Submenu_4</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">참여프로그램</a>
+                        <ul class="submenu">
+                            <li><a href="#">Submenu_1</a></li>
+                            <li><a href="#">Submenu_2</a></li>
+                            <li><a href="#">Submenu_3</a></li>
+                            <li><a href="#">Submenu_4</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">이용가이드</a>
+                        <ul class="submenu">
+                            <li><a href="#">Submenu_1</a></li>
+                            <li><a href="#">Submenu_2</a></li>
+                            <li><a href="#">Submenu_3</a></li>
+                            <li><a href="#">Submenu_4</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">소통서비스</a>
+                        <ul class="submenu">
+                            <li><a href="#">Submenu_1</a></li>
+                            <li><a href="#">Submenu_2</a></li>
+                            <li><a href="#">Submenu_3</a></li>
+                            <li><a href="#">Submenu_4</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <section id="banner">
+            <div class="slideList">
+                <div class="slideImg">
+                    <img src="images/ban01.jpg" alt="이미지 슬라이드 1">
+                </div>
+            </div>
+        </section>
+        <section id=content1 class="clearfix">
+            <article class="notice">
+                <div class="tab_menu clearfix">
+                    <div class="tab_btn">
+                        <ul>
+                            <li class="active"><a href="#">롯데월드 소식</a></li>
+                            <li><a href="#">뉴스/공지</a></li>
+                        </ul>
+                        <span class="more"><a href="#">더보기</a></span>
+                    </div>
+                    <div class="tab_cont">
+                        
+                    </div>
+                </div>
+            </article>
+            <figure class="ad">
+                <img src="images/ad.jpg" alt="온종일혜택">
+            </figure>
+        </section>
+        <section id=content2></section>
+        <footer id="footer"></footer>
+    </div>
+    
+    <!-- javascript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>
+        $(".nav > ul > li").mouseover(function(){
+           $(this).find(".submenu").stop().slideDown(200); 
+        });
+        $(".nav > ul > li").mouseleave(function(){
+           $(this).find(".submenu").stop().slideUp(200); 
+        });
+    </script>
+</body>
+</html>
