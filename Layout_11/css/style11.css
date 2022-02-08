@@ -13,13 +13,14 @@ table {border-spacing: 0;}
 #header .nav {float: right; width:950px; height:100px; line-height: 100px; background: #b39ddb;}
 
 /* banner */
-#banner {width: 1200px; height: 360px; text-align: center; overflow: hidden;}
+#banner {width: 1200px; height: 360px; text-align: center;}
 
-/* Slider */
-.slideList {position: relative; width: 1200px; height: 360px;}
+/* Slide */
+.slideList {width: 1200px; height: 360px; overflow: hidden;}
 .slideList .slideImg {position: relative;}
-.slideList .slideImg h2 {position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%); background: rgba(255,255,255,0.5); padding: 10px 30px; border-radius: 25px;}
+.slideList .slideImg h2 {position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background: rgba(255,255,255,0.5); padding: 10px 30px; border-radius: 25px;}
 .slideList .slideImg img {display: block;}
+
 /* contents */
 #contents {text-align: center;}
 #contents > div {float: left; width: 33.333333%; height: 247px; line-height: 247px;}
@@ -28,7 +29,7 @@ table {border-spacing: 0;}
 #contents > div.cont3 {background: #5e35b1;}
 
 /* footer */
-#footer {height: 100px; line-height: 100px; text-align: center;}
+#footer {height: 100px; line-height: 100px; text-align: center; }
 #footer .foot1 {float: left; width: 200px; background: #5e35b1;}
 #footer .foot2 {float: left; width: 800px; background: #512da8;}
 #footer .foot3 {float: left; width: 200px; background: #4527a0;}
