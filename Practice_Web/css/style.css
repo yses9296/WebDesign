@@ -7,14 +7,11 @@ li {list-style: none;}
 a {text-decoration: none; color: #333333;}
 
 /* layout */
-#wrap {width: 1200px; margin: 0 auto; background: #fff;}
-#header {width: 100%; height: 100px;}
-#banner {width: 100%; height: auto; background: #777;}
-#content1 {width: 100%; height: auto; margin-top: 20px;}
-#content2 {width: 100%; height: 200px; margin-top: 20px; background: #555;}
-#footer {width: 100%; height: 100px; margin-top: 20px; background: #444;}
+html, body {height: 100%;}
+#wrap {width: 1200px;  margin: 0 auto; background: #fff;}
 
 /* header */
+#header {width: 100%; height: 100px;}
 #header h1 {float: left; height: 100px;;}
 #header h1 img {display: block; height: 100%;}
 #header .nav {float: right; margin-top: 30px;}
@@ -26,23 +23,59 @@ a {text-decoration: none; color: #333333;}
 #header .nav ul li ul.submenu li {width: 100%; background: #fff;} 
 
 /* banner */
+#banner {width: 100%; height: auto; background: #777;}
 #banner img {display: block; width: 100%;}
 
 /* content1 */
-#content1 .notice {float: left; width: 50%; height: 260px; margin-right: 2%; border: 1px solid #d2d2d2; box-sizing: border-box;}
-#content1 .notice .tab_menu {}
-#content1 .notice .tab_menu .tab_btn {position: relative;}
-#content1 .notice .tab_menu .tab_btn ul {}
-#content1 .notice .tab_menu .tab_btn ul li {float: left; margin: 15px;}
-#content1 .notice .tab_menu .tab_btn ul li:last-child {margin-left: 0;}
-#content1 .notice .tab_menu .tab_btn ul li.active {font-weight: 600;}
-#content1 .notice .tab_menu .tab_btn ul li a {display: block; padding: 10px; font-size: 18px;}
-#content1 .notice .tab_menu .tab_btn .more {position: absolute; top: 24px; right: 20px; }
-#content1 .notice .tab_menu .tab_btn .more a {display: block; font-size: 15px;}
-#content1 .notice .tab_menu .tab_cont {text-align: left;}
-
-#content1 .ad {float: left; width: 48%; background: #999;}
+#content1 {width: 100%; height: auto; margin-top: 20px;}
+#content1 .notice {float: left; width: 49%; height: 260px; margin-right: 2%; border: 1px solid #d2d2d2; box-sizing: border-box; overflow: hidden;}
+#content1 .ad {float: left; width: 49%; background: #999; margin-right: 0;}
 #content1 .ad img {display: block;  width: 100%;}
+
+/*notice*/
+.notice {position: relative; padding: 30px;}
+.notice  ul {}
+.notice  ul li {float: left; margin-right: 10px;}
+/*.notice  ul li::after {content: ''; width: 1px; height: 15px; background: #ccc; position: absolute; top: 0; right: 0;}*/
+.notice  ul li a {display: block; font-size: 18px; font-weight: bold; color: #666}
+.notice  ul li.active a {color: #000;}
+.notice .more {position: absolute; top: 24px; right: 20px;}
+.notice .more a {display: block; font-size: 15px;}
+
+.notice ul li ul {position: absolute; left: 30px; top: 70px;}
+.notice ul li ul li {width: 95%; padding: 5px 0;}
+.notice ul li ul li a {float: left; width: 80%; font-size: 16px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; font-weight: normal;}
+.notice ul li ul li span {float: right; text-align: right; width: 15%; font-size: 10px;}
+
+
 /* content2 */
+#content2 {width: 100%; height: auto; margin-top: 30px;}
+#content2 h2 {font-size: 20px; margin-bottom: 10px;}
+#content2 ul li {width: 24.25%; float: left; margin-right: 1%;}
+#content2 ul li:last-child {margin-right: 0;}
+#content2 ul li a {display: block;}
+#content2 ul li a img {width: 100%;}
+#content2 ul li a span {display: block; padding: 10px 0;}
 
 /* footer */
+#footer {width: 100%; margin-top: 50px; padding: 30px 0; border-top: 1px solid #ccc;}
+#footer address {font-style: normal;  color: #333; font-size: 12px; font-weight: 500; }
+#footer address ul {width: 700px;}
+#footer address ul li {position: relative; display: inline; padding: 0 15px 0 10px; line-height: 1.7;}
+#footer address ul li::after {content: ''; background: #ccc; width: 0.5px; height: 15px; 
+                              position: absolute; top: 3px; right: 0px;}
+#footer address ul li:last-child::after {width: 0;}
+#footer address ul li.left {padding-left: 0;}
+#footer address p {padding-top: 30px; text-transform: uppercase;}
+
+/* PopUp */
+.layer_bg {display: none; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.3); z-index: 500;}
+.layer_bg .layer {position: absolute; top: 50%; left: 50%; width: 600px; height: 600px; margin-top: -300px; margin-left: -300px; background: #fff; border:2px solid #dbdbdb; z-index: 1000;}
+.layer_bg .layer h2 {font-size: 30px; padding: 20px;}
+.layer_bg .layer .close {position: absolute; bottom: 20px; right: 20px;}
+
+
+
+
+
+
