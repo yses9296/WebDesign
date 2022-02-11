@@ -25,12 +25,12 @@ html, body {height: 100%;}
 /* banner */
 #banner {width: 100%; height: 452px; overflow: hidden;}
 #banner .slideList {width: 100%; height: 452px; position: relative;}
-#banner .slideList .slideImg {width: 100%;}
+#banner .slideList .slideImg {width: 100%; position: relative;}
 #banner .slideList .slideImg img {display: block; width: 100%;}
 
 /* content1 */
 #content1 {width: 100%; height: auto; margin-top: 20px;}
-#content1 .notice {float: left; width: 49%; height: 260px; margin-right: 2%; border: 1px solid #d2d2d2; box-sizing: border-box; overflow: hidden;}
+#content1 .notice {float: left; width: 49%; height: 264px; margin-right: 2%; border: 1px solid #d2d2d2; box-sizing: border-box; overflow: hidden;}
 #content1 .ad {float: left; width: 49%; background: #999; margin-right: 0;}
 #content1 .ad img {display: block;  width: 100%;}
 
@@ -47,7 +47,7 @@ html, body {height: 100%;}
 .notice ul li ul {position: absolute; left: 30px; top: 70px;}
 .notice ul li ul li {width: 95%; padding: 5px 0;}
 .notice ul li ul li a {float: left; width: 80%; font-size: 16px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; font-weight: normal;}
-.notice ul li ul li span {float: right; text-align: right; width: 15%; font-size: 10px;}
+.notice ul li ul li span {float: right; text-align: right; width: 15%; font-size: 10px; margin-top: 4px;}
 
 
 /* content2 */

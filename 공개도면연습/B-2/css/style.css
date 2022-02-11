@@ -1,0 +1,36 @@
+/* reset */
+* {margin: 0; padding: 0;}
+.clearfix::before, .clearfix::after {display: block; content: ''; clear: both;}
+a {text-decoration: none; color: #333333;}
+li {list-style: none;}
+
+/* layout */
+#wrap {width: 100%; height: 700px; background: #ffffff; margin: 0 auto;}
+#header {width: 100%; height: 100px; background: #999; }
+#container {width: 1200px; margin: 0 auto;}
+#banner {width: 100%; height: 300px; background: #888;}
+#contents {width: 100%; height: 200px;}
+#footer {width: 100%; height: 100px; background: #666;}
+
+/* header */
+#header {}
+#header h2 {width: 20%; height: 100px; float: left; line-height: 100px; text-align: center; font-size: 25px; background: #444;}
+#header .nav {width: 50%; float: right; margin-top: 50px; position: relative;}
+#header .nav ul li {width: 25%; height: 50px; float: left; text-align: center; }
+#header .nav ul li a:hover {background: rgba(0,0,0,0.3); color: #fff;}
+#header .nav ul li a {display: block; padding: 15px 5px; background: #ffffff;}
+#header .nav ul li .submenu {display: none; position: absolute; z-index: 99; width: 25%;}
+#header .nav ul li .submenu li {width: 100%; text-align: center;}
+#header .subback {display: none; position: absolute; top: 100px; right: 0; width: 100%; height: 203px; background: #ffffff; z-index: 88;}
+
+
+/* contents */
+#contents {text-align: center;}
+#contents .cont1 {float: left; width: 33.333%; height: 200px; background: #999; line-height: 200px;}
+#contents .cont2 {float: left; width: 33.333%; height: 200px; background: #888; line-height: 200px;}
+#contents .cont3 {float: left; width: 33.333%; height: 200px; background: #777; line-height: 200px;}
+
+/* footer */
+#footer address {width: 80%; height: 100px; background: #111; float: left;}
+#footer .sns {width: 20%; height: 50px; background: #222; float: left;}
+#footer .site {width: 20%; height: 50px; background: #333; float: left;}
