@@ -8,6 +8,23 @@ $(".nav > ul > li").mouseleave(function(){
    //$(".nav > ul > li > ul").stop().slideUp(200); //together
 });
 
+//Slide
+var currentIndex = 0;
+
+setInterval(function(){
+    
+    if(currentIndex < 2){
+        currentIndex++;
+    }
+    else{
+        currentIndex = 0;
+    }
+    
+    var position = currentIndex * (-452)+"px";
+    $(".slideList").animate({top:position},300);
+    
+},4000);
+
 //Tab
 var tebBtn = $(".notice > ul > li");
 var tabCont = $(".notice > ul > li > ul");

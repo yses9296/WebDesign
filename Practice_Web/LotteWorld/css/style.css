@@ -19,12 +19,14 @@ html, body {height: 100%;}
 #header .nav ul li {position: relative; float: left; width: 160px; text-align: center;}
 #header .nav ul li a {display: block; padding: 10px 15px; font-size: 20px; font-weight: 600; }
 #header .nav ul li a:hover {background: rgba(0,0,0,0.3);}
-#header .nav ul li ul.submenu {display: none; position: absolute; left: 0; top: 50px;} 
+#header .nav ul li ul.submenu {display: none; position: absolute; left: 0; top: 50px; z-index: 300} 
 #header .nav ul li ul.submenu li {width: 100%; background: #fff;} 
 
 /* banner */
-#banner {width: 100%; height: auto; background: #777;}
-#banner img {display: block; width: 100%;}
+#banner {width: 100%; height: 452px; overflow: hidden;}
+#banner .slideList {width: 100%; height: 452px; position: relative;}
+#banner .slideList .slideImg {width: 100%;}
+#banner .slideList .slideImg img {display: block; width: 100%;}
 
 /* content1 */
 #content1 {width: 100%; height: auto; margin-top: 20px;}
