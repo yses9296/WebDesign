@@ -71,7 +71,7 @@ html, body {height: 100%;}
 #footer address p {padding-top: 30px; text-transform: uppercase;}
 
 /* PopUp */
-.layer_bg {display: none; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.3); z-index: 500;}
+.layer_bg {display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.3); z-index: 500;}
 .layer_bg .layer {position: absolute; top: 50%; left: 50%; width: 600px; height: 600px; margin-top: -300px; margin-left: -300px; background: #fff; border:2px solid #dbdbdb; z-index: 1000;}
 .layer_bg .layer h2 {font-size: 30px; padding: 20px;}
 .layer_bg .layer .close {position: absolute; bottom: 20px; right: 20px;}

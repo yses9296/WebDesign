@@ -1,0 +1,59 @@
+/* reset */
+* {margin: 0; padding: 0; font-size: 16px;}
+.clearfix::before, .clearfix::after {content: ''; display: block; clear: both;}
+li {list-style: none;}
+a {text-decoration: none; color: #333;}
+
+/* layout */
+#wrap {margin: 0 auto; width: 1000px;}
+#header {}
+#banner {}
+#content1 {margin-top: 20px;}
+#content2 {margin-top: 20px; width: 1000px; height: 300px; background: #444;}
+#footer {margin-top: 20px; width: 1000px; height: 100px; background: #555;}
+
+/*header*/
+#header h1 {float: left; padding: 20px 0 10px 0;}
+#header h1 img {width: 110px;}
+#header .nav {float: right; width: 70%;}
+#header .nav ul {}
+#header .nav li {position: relative; float: left; width: 20%; text-align: center;}
+#header .nav li a {display: block; margin-top: 10px; padding: 10px 0; font-size: 20px; font-weight: bold;}
+#header .nav li:hover a {background: rgba(0,0,0,0.3);}
+
+#header .nav li ul.submenu {display: none; position: absolute; left: 0; top: 60px;}
+#header .nav li ul.submenu li {width: 100%;}
+#header .nav li ul.submenu li a {display: block; padding: 10px; background: #fff;}
+
+/*banner*/
+#banner .slideList {width: 100%; height: auto;}
+#banner .slideList .slideImg {width: 100%;}
+#banner .slideList .slideImg img {width: 100%;}
+
+/*content1*/
+#content1 .left {width: 49%; float: left; margin-right: 2%; padding: 20px; box-sizing: border-box; 
+    background: #f2f2f2 url(../images/bg1.jpg) no-repeat right 20px center;
+    background-size: 100px;}
+#content1 .left .left_title {font-size: 20px; padding-bottom: 5px;}
+#content1 .left .left_desc {font-size: 14px; padding-bottom: 15px; color: #777;}
+#content1 .left .left_btn {
+    background: url(../images/icon1.jpg) no-repeat left center;
+    background-size: 20px;
+    padding-left: 25px; padding-top: 2px;
+    font-weight: bold;}
+
+#content1 .right {width: 49%; float: left; margin-right: 0; padding: 20px; box-sizing: border-box; 
+    background: #f2f2f2 url(../images/bg2.jpg) no-repeat right 20px center;
+    background-size: 100px;}
+#content1 .right .right_title {font-size: 20px; padding-bottom: 5px;}
+#content1 .right .right_desc {font-size: 14px; padding-bottom: 15px; color: #777;}
+#content1 .right .right_btn {
+    background: url(../images/icon2.jpg) no-repeat left center;
+    background-size: 20px;
+    padding-left: 25px; padding-top: 2px;
+    font-weight: bold;}
+#content1 .right .right_btn em {font-size: 12px; font-style: normal; color: #666;}
+
+/*content2*/
+
+/*footer*/
