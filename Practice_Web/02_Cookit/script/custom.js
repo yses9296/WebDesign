@@ -41,3 +41,31 @@ setInterval(function(){
     $(".slideList").animate({left: slidePosition}, 300);
 
 }, 3000);
+
+//Tab Menu
+var tabBtn = $(".tab_menu .tab_btn > ul > li");
+var tabCont = $(".tab_cont > div");
+
+tabCont.hide().eq(0).show();
+tabBtn.click(function(e){
+    e.preventDefault();
+    
+    var target = $(this);
+    var index = target.index();
+    
+    tabBtn.removeClass("active");
+    tabBtn.eq(index).addClass("active");
+    tabCont.hide().eq(index).show();
+});
+
+
+//PopUp
+$(".left_btn, .right_btn").click(function(e){
+    e.preventDefault();
+    $(".layout_bg").show();
+});
+
+$(".close").click(function(e){
+    e.preventDefault();
+    $(".layout_bg").hide();
+});

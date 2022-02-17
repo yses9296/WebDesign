@@ -65,12 +65,16 @@ a {text-decoration: none; color: #333;}
 
 /*content2*/
 #content2 {margin-top: 30px;}
-#content2 h2 {font-size: 24px; padding-bottom: 10px; }
-#content2 .best {}
-#content2 .best figure {float: left; width: 32%; margin-right: 2%;}
-#content2 .best figure:last-child {margin-right: 0;}
-#content2 .best figure img {width: 100%;}
-#content2 .best figcaption {padding-top: 10px; font-weight: bold;}
+
+.tab_menu .tab_btn ul {overflow: hidden;}
+.tab_menu .tab_btn ul li {float: left; margin-right: 15px;}
+.tab_menu .tab_btn ul li a {display: block; font-size: 24px; font-weight: bold; color: #ccc; padding-bottom: 10px; }
+.tab_menu .tab_btn ul li.active a {color: #000;}
+
+.tab_menu .tab_cont .best figure {float: left; width: 32%; margin-right: 2%;}
+.tab_menu .tab_cont .best figure:last-child {margin-right: 0;}
+.tab_menu .tab_cont .best figure img {width: 100%;}
+.tab_menu .tab_cont .best figcaption {padding-top: 10px; font-weight: bold;}
 
 /*footer*/
 #footer {margin-top: 40px; padding: 40px 0; width: 100%; height: 200px; background: #202020; color: #fff;}
@@ -86,3 +90,9 @@ a {text-decoration: none; color: #333;}
 #footer address {float: right; font-style: normal; margin-right: 90px; margin-top: 30px;}
 #footer address ul {display: block;}
 #footer address ul li {float: left; padding: 5px 10px; font-weight: bold; font-size: 14px; color: #808080;}
+
+/*layout*/
+.layout_bg {display: none; width: 100%; height: 100%; position: fixed; top: 0; left: 0; background: rgba(0,0,0,0.4); z-index: 1000;}
+.layout_bg .layout {position: absolute; width: 600px; height: 600px; top: 50%; left: 50%; margin-top: -300px; margin-left: -300px; background: #fff;}
+.layout_bg .layout h2 {padding: 20px; font-size: 24px; font-weight: bold;}
+.layout_bg .layout .close {position: absolute; bottom: 20px; right: 20px; padding: 10px;}
