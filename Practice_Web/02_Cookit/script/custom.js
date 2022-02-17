@@ -54,8 +54,11 @@ tabBtn.click(function(e){
     var index = target.index();
     
     tabBtn.removeClass("active");
-    tabBtn.eq(index).addClass("active");
-    tabCont.hide().eq(index).show();
+    //tabBtn.eq(index).addClass("active");
+    target.addClass("active");
+    //tabCont.hide().eq(index).show();
+    tabCont.css("display", "none");
+    tabCont.eq(index).css("display", "block");
 });
 
 
