@@ -11,16 +11,37 @@ li {list-style: none; }
 #header {height: 100px; width: 100%;}
 .logo {width: 20%; height: 100px; float: left; display: flex; align-items: center; justify-content: center;}
 .logo a {display: block; }
-.logo img {width: 100%; }
+.logo img {width: 200px; height: 40px;} 
 
-.nav {width: 60%; float: right; text-align: center; margin-top: 44px;}
+.nav {
+    width: 70%;
+    height: 100%;
+    float: right;
+}
 .nav ul {}
-.nav ul li {position: relative; width: 25%; float: left;}
-.nav ul li a {display: block; padding: 15px 10px; font-size: 20px;}
+    .nav ul li {
+        position: relative;
+        width: 25%;
+        height: 100px;
+        float: left;
+    }
+        .nav ul li a {
+            text-align: center;
+            display: block;
+            padding: 37px 0px;
+            font-size: 20px;
+        }
 .nav ul li a:hover {background: #000; color: #fff;}
-.nav ul li ul.submenu {position: absolute; top: 56px; left: 0; background: #999; z-index: 100; display: none;}
-.nav ul li ul.submenu li {width: 100%;}
-.nav ul li ul.submenu li a {display: block;}
+.nav ul li ul.submenu {position: absolute; top: 100px; left: 0; background: #999; z-index: 100; display: none;}
+    .nav ul li ul.submenu li {
+        width: 100%;
+        height: auto;
+    }
+        .nav ul li ul.submenu li a {
+            display: block;
+            text-align: center;
+            padding: 15px 10px;
+        }
 .nav ul li ul.submenu li a:hover {background: #fff; color: #222;}
 
 #header {position: relative;}
