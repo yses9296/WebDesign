@@ -1,0 +1,97 @@
+/*reset*/
+* {margin: 0; padding: 0;}
+.clearfix::before, .clearfix::after {content: ''; display: block; clear: both;}
+li {list-style: none;}
+a {text-decoration: none; color: #333;}
+
+/*layout*/
+#wrap {width: 1200px; margin: 0 auto;}
+
+#header_wrap {width: 1200px; margin: 0 auto; height: 100px; background: #dbdbdb;}
+#footer_wrap {width: 1200px; margin: 0 auto; height: 100px; background: #000;}
+
+/*header*/
+#header {width: 100%; height: 100px; background: #dbdbdb;}
+.logo {width: 20%; height: 100%; float: left; display: flex; align-items: center; justify-content: center;}
+.logo img {display: block; width: 100%;}
+
+.nav {width: 70%; height: 100%; float: right; }
+.nav ul {}
+.nav ul li {float: left; width: 25%; position: relative;}
+.nav ul li a {display: block; padding: 0 10px; line-height: 100px; color: #fff; text-align: center; font-size: 20px; font-weight: bold;}
+.nav ul li a:hover {background: #fff; color: #000;}
+
+.nav ul li ul.submenu {position: absolute; top: 100px; left: 0; z-index: 100; display: none;} 
+.nav ul li ul.submenu li {width: 100%;} 
+.nav ul li ul.submenu li a {display: block; padding: 0 10px; line-height: 55px; background: #fff; color: #000; text-align: center;}
+.nav ul li ul.submenu li a:hover {background: #444; color: #fff;}
+.nav .menu_bg {display: none; width: 840px; height: 220px; background: #fff; position: absolute; top: 100px; left: 614px; z-index: 50;}
+
+/*banner*/
+#banner {width: 1200px; height: 300px; overflow: hidden;}
+.slideList {position: relative; width: 3600px; height: 100%;}
+.slideList .slideImg {position: relative; float: left; }
+.slideList .slideImg h2 {
+    position: absolute; top: 50%; left: 50%; padding: 5px 20px; 
+    transform: translate(-50%, -50%); background: rgba(0,0,0,0.4); color: #fff; border-radius: 10px;}
+.slideList .slideImg img {display: block; }
+
+
+/*contents*/
+#contents {width: 100%; height: 200px; background: #777;}
+#contents > div {width: 33.333%; height: 100%; float: left;}
+
+/*cont1*/
+.cont1 {background: #fff;}
+.tab_btn {}
+.tab_btn ul {}
+.tab_btn ul li {float: left; border: 0; }
+.tab_btn ul li a {display: block; padding: 10px 20px; color: #fff; background: #222;}
+.tab_btn ul li.active { border: 1px solid #dbdbdb; border-bottom: 0;}
+.tab_btn ul li.active a {color: #222; background: #fff;}
+
+.tan_cont {border: 1px solid #dbdbdb; box-sizing: border-box;}
+.tan_cont .tab_cont1 {}
+.tan_cont .tab_cont1 ul {}
+.tan_cont .tab_cont1 ul li {}
+.tan_cont .tab_cont1 ul li a {display: block; color: #000; padding: 8px 20px;}
+
+.tan_cont .tab_cont2 {height: 150px; padding: 10px; box-sizing: border-box;}
+.tan_cont .tab_cont2 ul {}
+.tan_cont .tab_cont2 ul li {width: 32%; margin-right: 2%; margin-top: 10px; float: left;}
+.tan_cont .tab_cont2 ul li:last-child {margin-right: 0;}
+.tan_cont .tab_cont2 ul li a {}
+.tan_cont .tab_cont2 ul li a img {width: 100%;}
+
+/*cont2*/
+.cont2 {position: relative;}
+.cont2 h2 {position: absolute; top: 50%; left: 50%; padding: 5px 10px; 
+            transform: translate(-50%, -50%); background: rgba(0,0,0,0.4); font-size: 18px; color: #fff; border-radius: 10px;}
+.cont2 img {width: 100%;}
+
+/*cont3*/
+.cont3 {position: relative;}
+.cont3 h2 {position: absolute; top: 50%; left: 50%; padding: 5px 10px; 
+            transform: translate(-50%, -50%); background: rgba(0,0,0,0.4); font-size: 18px; color: #fff; border-radius: 10px;}
+.cont3 img {width: 100%;}
+
+/*footer*/
+#footer {width: 100%; height: 100px; background: #000; }
+#footer_wrap > div {float: left; display: flex; align-items: center; justify-content: center;}
+
+.foot1 {width: 20%; height: 100%;}
+.foot1 .foot_logo {width: 100%;}
+
+.foot2 {width: 80%; height: 50px;}
+.foot2 ul li {float: left;}
+.foot2 ul li a {display: block; padding: 15px 50px; color: #fff;}
+.foot2 ul li a:hover {background: rgba(255,255,255,0.3);}
+
+.foot3 {width: 80%; height: 50px;}
+.foot3 address {font-style: normal; color: #fff;}
+
+/*popup*/
+.layout_bg {position: absolute; top: 0; left: 0; background: rgba(0,0,0,0.4); width: 100%; height: 100%; z-index: 200; display: none;}
+.layout {position: fixed; width: 600px; height: 600px; background: #fff; left: 50%; top: 50%; margin-left: -300px; margin-top: -300px; z-index: 250;}
+.layout h2 {padding: 20px; font-size: 20px; font-weight: bold;}
+.layout .close {position: absolute; bottom: 20px; right: 20px;}
