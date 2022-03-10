@@ -6,31 +6,88 @@ li {list-style: none;}
 
 /* layout */
 #wrap {width: 100%; height: 700px; background: #ffffff; margin: 0 auto;}
-#header {width: 100%; height: 100px; background: #999; }
+
 #container {width: 1200px; margin: 0 auto;}
-#banner {width: 100%; height: 300px; background: #888;}
-#contents {width: 100%; height: 200px;}
-#footer {width: 100%; height: 100px; background: #666;}
+#header_wrap, #footer_wrap {width: 1200px; height: 100%; margin: 0 auto;}
 
 /* header */
-#header {}
-#header h2 {width: 20%; height: 100px; float: left; line-height: 100px; text-align: center; font-size: 25px; background: #444;}
+#header {width: 100%; height: 100px; background: #79d0ff; }
+#header .logo {width: 20%; height: 100px; float: left; display: flex; align-items: center; justify-content: center;}
 #header .nav {width: 50%; float: right; margin-top: 50px; position: relative;}
 #header .nav ul li {width: 25%; height: 50px; float: left; text-align: center; }
 #header .nav ul li a:hover {background: rgba(0,0,0,0.3); color: #fff;}
-#header .nav ul li a {display: block; padding: 15px 5px; background: #ffffff;}
+#header .nav ul li a {display: block; padding: 15px 5px; font-weight: bold;}
 #header .nav ul li .submenu {display: none; position: absolute; z-index: 99; width: 25%;}
 #header .nav ul li .submenu li {width: 100%; text-align: center;}
 #header .subback {display: none; position: absolute; top: 100px; right: 0; width: 100%; height: 203px; background: #ffffff; z-index: 88;}
 
+/* banner */
+#banner {width: 100%; height: 300px; background: #888;  overflow: hidden;}
+.slideList {width: 100%; height: 900px; position: relative;}
+.slideList .slideImg {position: relative;}
+.slideList .slideImg h2 {
+    position: absolute; top: 50%; left: 50%;
+    transform: translate(-50%, -50%); font-size: 25px;
+    font-weight: bold; color: #fff; background: rgba(0,0,0,0.5);
+    padding: 5px 15px; border-radius: 20px;}
+.slideList .slideImg img {display: block; width: 100%;}
+
 
 /* contents */
-#contents {text-align: center;}
-#contents .cont1 {float: left; width: 33.333%; height: 200px; background: #999; line-height: 200px;}
-#contents .cont2 {float: left; width: 33.333%; height: 200px; background: #888; line-height: 200px;}
-#contents .cont3 {float: left; width: 33.333%; height: 200px; background: #777; line-height: 200px;}
+#contents {width: 100%; height: 200px;}
+#contents > div {float: left; width: 33.333%; height: 200px;}
+
+/*cont1*/
+.cont1 {}
+.cont1 h3 {width: 100px;}
+.cont1 h3 a {display: block; padding: 10px 15px; font-size: 16px; text-align: center; background: #222; color: #fff;}
+.cont1 ul {border: 1px solid #dbdbdb; box-sizing: border-box; padding: 12px 10px;}
+.cont1 ul li {}
+.cont1 ul li a {display: block; padding: 6px; background: #fff; color: #111;}
+
+/*cont2*/
+.cont2 {}
+.cont2 h3 {width: 100px;}
+.cont2 h3 a {display: block; padding: 10px 15px; font-size: 16px; text-align: center; background: #222; color: #fff;}
+.cont2 ul {border: 1px solid #dbdbdb; box-sizing: border-box; padding: 18px 10px; background: #ededed;}
+.cont2 ul li {float: left; width: 32%; margin-right: 2%;}
+.cont2 ul li:last-child {margin-right: 0;}
+.cont2 ul li a {display: block;}
+.cont2 img {display: block; width: 100%;}
+
+/*cont3*/
+.cont3 {position: relative;}
+.cont3 img {width: 100%; display: block;}
+.cont3 h2 {position: absolute; top: 50%; left: 50%;
+    transform: translate(-50%, -50%); font-size: 18px;
+    font-weight: bold; color: #fff; background: rgba(0,0,0,0.5);
+    padding: 5px 10px; border-radius: 20px;}
 
 /* footer */
-#footer address {width: 80%; height: 100px; background: #111; float: left;}
-#footer .sns {width: 20%; height: 50px; background: #222; float: left;}
-#footer .site {width: 20%; height: 50px; background: #333; float: left;}
+#footer {width: 100%; height: 100px; background: #111;}
+.foot1 address {
+    width: 80%; height: 100px; float: left;
+    font-style: normal; display: flex; align-items: center; justify-content: center; color: #fff;
+}
+.foot2 {width: 20%; height: 70px; float: left; padding: 3px 10px; box-sizing: border-box;
+    display: flex;
+	justify-content: space-between;
+}
+
+.foot2 ul {}
+.foot2 ul li {float: left; width: 32%; margin-right: 2%;}
+.foot2 ul li:last-child {margin-right: 0;}
+.foot2 ul li a {display: block; padding: 5px;}
+.foot2 ul li img {display: block; width: 100%; border-radius: 50%;}
+
+.foot3 {
+    width: 20%; height: 30px; float: left;
+    display: flex; align-items: center; justify-content: center;
+}
+.foot3 select {width: 90%; padding: 0 16px;}
+
+/*popup*/
+.layer_bg {display: none; position: fixed; width: 100%; height: 100%; top: 0; left: 0; background: rgba(0,0,0,0.3);}
+.layer {position: relative; width: 600px; height: 600px; top: 50%; left: 50%; margin-left: -300px; margin-top: -300px; background: #fff;}
+.layer h2 {padding: 20px; font-size: 20px; font-weight: bold;}
+.close {position: absolute; bottom: 20px; right: 20px;}
