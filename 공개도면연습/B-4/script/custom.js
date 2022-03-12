@@ -1,4 +1,5 @@
 $(document).ready(function(){
+    //menu
     $(".submenu").hide();
     $("nav").mouseover(function(){
        $(".submenu").stop().slideDown(300); 
@@ -8,6 +9,7 @@ $(document).ready(function(){
     });
 });
 
+//slide
 var currentIndex = 0;
 var position;
 
@@ -24,6 +26,7 @@ setInterval(function(){
     $(".slideList").animate({left:position}, 300);
 }, 3000);
 
+//popup
 $(".popup").click(function(){
     $(".layout_bg").css("display", "block");
 });
