@@ -1,0 +1,91 @@
+/*reset*/
+* {margin: 0; padding: 0;}
+.clearfix::before, .clearfix::after {content: ''; display: block; clear: both;}
+li {list-style: none;}
+a {text-decoration: none; color: #333;}
+
+/*layout*/
+#wrap {width: 1000px;}
+
+/*header*/
+#header {width: 200px; height: 650px; float: left; background: #d2e4ff;}
+.logo {height: 15%; width: 100%; display: flex; align-items: center; justify-content: center;}
+.logo img {display: block; width: 200px; height: 40px;}
+
+.nav {height: 85%; width: 100%;}
+.nav ul li {width: 200px; background: #e7d7ff; position: relative;}
+.nav ul li a {display: block; padding: 15px 0; text-align: center;}
+.nav ul li a:hover {background: rgba(255,255,255,0.3);}
+.nav ul li ul.submenu {position: absolute; right: -200px; top: 0; z-index: 50; display: none;}
+.nav ul li ul.submenu li {background: #c4d9ff;}
+.nav ul li ul.submenu li a {display: block;}
+
+
+/*banner*/
+#banner {width: 800px; height: 350px; float: left; overflow: hidden;}
+.slideList {width: 2400px; height: 350px; position: relative;}
+.slideImg {position: relative; float: left;}
+.slideImg h2 {
+    position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); 
+    padding: 3px 10px; background: rgba(0,0,0,0.5); color: #fff; border-radius: 15px;}
+.slideImg img {display: block;}
+
+/*contents*/
+#contents {width: 800px; height: 200px; float: left;}
+#contents > div {float: left;  height: 100%;}
+
+/*cont1*/
+.cont1 {width: 35%;}
+.cont1 h2 {width: 90px; height: 30px;}
+.cont1 h2 > a {display: block; padding: 0 10px; line-height: 30px; font-size: 16px; background: #c7d6f9; text-align: center;}
+.cont1 ul {
+    width: 100%; height: 170px; 
+    display: flex; flex-direction: column; justify-content: center;
+    border: 1px solid #143666; box-sizing: border-box;
+}
+.cont1 ul li {}
+.cont1 ul li:nth-child(2n) {background: #e6f3ff;}
+.cont1 ul li a {display: block; padding: 10px;}
+
+
+/*cont2*/
+.cont2 {width: 35%;}
+.cont2 h2 {width: 90px; height: 30px;}
+.cont2 h2 > a {display: block; padding: 0 10px; line-height: 30px; font-size: 16px; background: #c7d6f9; text-align: center;}
+.cont2 ul {
+    width: 100%; height: 170px; padding: 0 5px;
+    display: flex; align-items: center; justify-content: center;
+    border: 1px solid #143666; box-sizing: border-box; border-left: 0;}
+.cont2 ul li {float: left; width: 32%; margin-right: 2%;}
+.cont2 ul li:last-child {margin-right: 0;}
+.cont2 ul li img {display: block; width: 100%;}
+
+/*cont3*/
+.cont3 {width: 30%; position: relative;}
+.cont3 h2 {
+    position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 16px;
+    padding: 3px 10px; background: rgba(0,0,0,0.5); color: #fff; border-radius: 15px;}
+.cont3 img {display: block; width: 100%;}
+
+/*footer*/
+#footer {width: 800px; height: 100px; float: left; background: #111;}
+#footer > div {float: left; height: 100%; display: flex; align-items: center; justify-content: center;}
+
+/*foot1*/
+.foot1 {width: 30%;}
+.foot1 img {display: block; width: 100%;}
+
+/*foot2*/
+.foot2 {width: 40%;}
+.foot2 address {font-style: normal; color: #fff; }
+
+/*foot3*/
+.foot3 {width: 30%;}
+.foot3 select {width: 70%;}
+
+/*layout*/
+.layout_bg {display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.5);}
+.layout {position: fixed; top: 50%; left: 50%; width: 600px; height: 600px; margin-top: -300px; margin-left: -300px; background: #fff; border: 1px solid #dbdbdb; box-sizing: border-box;}
+.layout h2 {padding: 20px;}
+.layout p {padding: 0 20px; line-height: 40px;}
+.layout .close {position: absolute; bottom: 20px; right: 20px; background: #888; color: #fff; padding: 5px 20px;}
